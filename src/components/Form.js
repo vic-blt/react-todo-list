@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 
 export default function ({addTask}) {
-    let [name, setName] = useState('')
+    const [name, setName] = useState('')
 
-    let handleSubmit = event => {
+    const handleSubmit = event => {
         event.preventDefault()
+
         if (name !== '') {
             addTask(name)
             setName('')

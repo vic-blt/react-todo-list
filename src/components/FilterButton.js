@@ -1,11 +1,9 @@
 import React from "react";
 
-export default function FilterButton() {
+export default function FilterButton({name, setFilter, isPressed}) {
     return (
-        <button type="button" className="btn toggle-btn" aria-pressed="true">
-            <span className="visually-hidden">Show </span>
-            <span>all</span>
-            <span className="visually-hidden"> tasks</span>
+        <button type="button" className="btn toggle-btn" aria-pressed={isPressed} onClick={() => setFilter(name)}>
+            <span>{name}</span>
         </button>
     )
 }
