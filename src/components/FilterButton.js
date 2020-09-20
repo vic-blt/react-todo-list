@@ -7,5 +7,5 @@ export default function FilterButton() {
             <span>all</span>
             <span className="visually-hidden"> tasks</span>
         </button>
-    );
+    )
 }
